@@ -3,9 +3,9 @@ Pyhton Programming Project ( Task 3)  Command-line Data Storage System
 
 
 📌 Simple REST API using Flask
-👨‍💻 Author
 
-Varun Patel
+
+
 
 📖 Project Description
 
@@ -37,26 +37,93 @@ JSON
 Virtual Environment (venv)
 
 📂 Project Structure
-PRACTICE-JS/
+AdvorixInternship_tasks/
 │── AdvorixInternship_task3.py
 │── users.json
 │── my_venv/
 │── README.md
-⚙️ Installation & Setup
-1️⃣ Clone or Download the Project
-2️⃣ Navigate to Project Folder
-cd path/to/your/folder
-3️⃣ Create Virtual Environment (Optional but Recommended)
-python3 -m venv my_venv
+
+🚀 Steps to Use the Flask REST API
+🔹 1️⃣ Go to your project folder
+cd /path/to/your/folder
+🔹 2️⃣ Activate virtual environment (if created)
+
+You already have my_venv, so run:
+
 source my_venv/bin/activate
-4️⃣ Install Dependencies
+
+You will see:
+
+(my_venv)
+🔹 3️⃣ Install Flask (only first time)
 pip install flask
-▶️ Running the Application
+🔹 4️⃣ Make sure required files exist
+
+Check using:
+
+ls
+
+You should see:
+
+app.py
+users.json
+
+If users.json is missing, create it:
+
+echo [] > users.json
+🔹 5️⃣ Run the API
 python AdvorixInternship_task3.py
 
-Server will start at:
+OR
 
-http://127.0.0.1:5000
+python3 AdvorixInternship_task3.py
+
+You will get:
+
+Running on http://127.0.0.1:5000
+
+✅ Server started
+
+🌐 6️⃣ Use the API (very important)
+
+Open browser or Postman.
+
+👉 1. Get all users
+
+Type in browser:
+
+http://127.0.0.1:5000/users
+👉 2. Add a new user (POST request)
+
+Use Postman → Body → JSON
+
+POST http://127.0.0.1:5000/users
+{
+  "name": "Varun",
+  "age": 20
+}
+👉 3. Get single user
+http://127.0.0.1:5000/users/1
+👉 4. Update user
+
+PUT request:
+
+http://127.0.0.1:5000/users/1
+{
+  "name": "Rahul",
+  "age": 22
+}
+👉 5. Delete user
+
+DELETE request:
+
+http://127.0.0.1:5000/users/1
+🛑 7️⃣ Stop the server
+
+Press:
+
+CTRL + C
+
 🌐 API Endpoints
 Method	Endpoint	Description
 GET	/users	Get all users
@@ -106,3 +173,7 @@ Manage backend logic in Python
 🏁 Conclusion
 
 This project demonstrates the implementation of a simple REST API using Flask and showcases backend development fundamentals required for modern web applications
+
+👨‍💻 Author
+
+Varun Patel
