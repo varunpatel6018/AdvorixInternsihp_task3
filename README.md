@@ -66,7 +66,7 @@ PUT	/users/<id>	Update user
 DELETE	/users/<id>	Delete user
 📌 Example JSON Format
 {
-  "name": "Varun",
+  "name": "Rahul",
   "age": 20
 }
 🧪 Testing
