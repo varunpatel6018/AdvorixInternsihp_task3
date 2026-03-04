@@ -44,8 +44,10 @@ AdvorixInternship_tasks/
 │── README.md
 
 🚀 Steps to Use the Flask REST API
+
 🔹 1️⃣ Go to your project folder
-cd /path/to/your/folder
+cd /path/to/your/project
+
 🔹 2️⃣ Activate virtual environment (if created)
 
 You already have my_venv, so run:
@@ -55,8 +57,11 @@ source my_venv/bin/activate
 You will see:
 
 (my_venv)
+
 🔹 3️⃣ Install Flask (only first time)
+
 pip install flask
+
 🔹 4️⃣ Make sure required files exist
 
 Check using:
@@ -65,7 +70,7 @@ ls
 
 You should see:
 
-app.py
+AdvorixInternship_task3.py
 users.json
 
 If users.json is missing, create it:
@@ -93,31 +98,39 @@ Open browser or Postman.
 Type in browser:
 
 http://127.0.0.1:5000/users
+
 👉 2. Add a new user (POST request)
 
 Use Postman → Body → JSON
 
 POST http://127.0.0.1:5000/users
+
 {
   "name": "Varun",
   "age": 20
 }
+
 👉 3. Get single user
+
 http://127.0.0.1:5000/users/1
+
 👉 4. Update user
 
 PUT request:
 
 http://127.0.0.1:5000/users/1
+
 {
   "name": "Rahul",
   "age": 22
 }
+
 👉 5. Delete user
 
 DELETE request:
 
 http://127.0.0.1:5000/users/1
+
 🛑 7️⃣ Stop the server
 
 Press:
@@ -125,17 +138,26 @@ Press:
 CTRL + C
 
 🌐 API Endpoints
+
 Method	Endpoint	Description
+
 GET	/users	Get all users
+
 GET	/users/<id>	Get single user
+
 POST	/users	Add new user
+
 PUT	/users/<id>	Update user
+
 DELETE	/users/<id>	Delete user
+
 📌 Example JSON Format
+
 {
   "name": "Rahul",
   "age": 20
 }
+
 🧪 Testing
 
 The API can be tested using:
