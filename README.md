@@ -1,11 +1,7 @@
 # AdvorixInternsihp_task3
 Pyhton Programming Project ( Task 3)  Command-line Data Storage System
 
-
 📌 Simple REST API using Flask
-
-
-
 
 📖 Project Description
 
@@ -76,6 +72,7 @@ users.json
 If users.json is missing, create it:
 
 echo [] > users.json
+
 🔹 5️⃣ Run the API
 python AdvorixInternship_task3.py
 
@@ -170,27 +167,27 @@ Curl commands
 
 🚀 Features
 
-Lightweight backend
+• Lightweight backend
 
-JSON-based data storage
+• JSON-based data storage
 
-Simple and easy to understand
+• Simple and easy to understand
 
-Beginner-friendly REST API
+• Beginner-friendly REST API
 
-Supports full CRUD functionality
+• Supports full CRUD functionality
 
 📚 Learning Outcome
 
 Through this project, I learned how to:
 
-Create REST APIs using Flask
+• Create REST APIs using Flask
 
-Handle HTTP methods (GET, POST, PUT, DELETE)
+• Handle HTTP methods (GET, POST, PUT, DELETE)
 
-Work with JSON files
+• Work with JSON files
 
-Manage backend logic in Python
+• Manage backend logic in Python
 
 🏁 Conclusion
 
